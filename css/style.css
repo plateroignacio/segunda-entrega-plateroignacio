@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  font-family: "Urbanist", sans-serif;     */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.header-index {
+    font-family: "Urbanist", sans-serif;
+    background-color: #090029;
+    display: grid;
+    justify-content: center;
+
+
+    .navbar {
+        display: grid;
+        list-style: none;
+        padding: 0rem 1rem;
+        justify-content: center;
+        gap: 1.5rem;
+
+        li a {
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navbar {
+            display: flex;
+        }
+    }
+
+
+}
+
+.banner {
+    font-family: "Urbanist", sans-serif;
+
+    background-color: black;
+    padding: 2rem;
+
+    div {
+        h1 {
+            margin-bottom: 40px;
+            font-size: 70px
+        }
+
+        p {
+            padding: 20px 0px;
+            font-size: 20px;
+        }
+    }
+
+    .text {
+        width: min(95%, 140rem);
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+    }
+
+    img {
+        height: 15rem;
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: 20rem;
+        }
+    }
+    button {
+        background-color: white;
+        color: #090029;
+        border-radius: .5rem;
+
+        &:hover {
+            background-color: rgb(129, 127, 127);
+        }
+    }
+}
+
+
+
+.card-container {
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+    padding-bottom: 1rem;
+
+    p {
+        padding-bottom: 0.5rem;
+    }
+
+    border-radius: 0.5rem;
+}
+
+.card-container h3 {
+    padding: 1rem;
+    font-family: "Urbanist", sans-serif;
+
+
+}
+
+.card-container div {
+    width: 100%;
+    height: 300px;
+}
+
+.card-container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-productos {
+    display: flex;
+    height: 500px;
+    background-color: rgb(9, 0, 41);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+
+
+
+.inspiracion {
+    background-color: rgb(9, 0, 41);
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: "Urbanist", sans-serif;
+    color: #fff;
+    /* Cambié a blanco para contrastar mejor */
+}
+
+.inspiracion-container {
+    background-color: rgb(9, 0, 41);
+    padding: 0 20px;
+}
+
+.inspiracion-item {
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 4rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.inspiracion-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.inspiracion-item img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.inspiracion-item p {
+    font-size: 18px;
+    color: rgb(9, 0, 41);
+    padding-top: 15px;
+    font-style: italic;
+}
+
+.carousel-inner{
+    margin-top: 30rem;
+    left: 3rem;
+    @media (min-width: 768px) {
+        margin-top: 0;
+        left: 0;
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(9, 0, 41);
+    /* Color del texto dentro del caption */
+    @media (min-width: 768px) {
+
+    }
+}
+
+@media (max-width: 768px) {
+    .inspiracion-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .inspiracion-item img {
+        height: auto;
+    }
+}
+
+
+.footer {
+    background-color: rgb(0, 0, 2);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 0px;
+    clear: both;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0rem 50px ;
+    flex-wrap: wrap;
+}
+.footer-container-producto {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0rem 50px ;
+    padding-top: 25rem;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px){
+        padding: 0 50px;
+    }
+}
+
+.footer-brand h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.footer-brand p {
+    font-size: 16px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.footer-links h4,
+.footer-social h4 {
+    margin-bottom: 15px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* contacto */
+
+.contacto {
+    padding: 50px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contacto-container {
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.contacto-container h1 {
+    margin-bottom: 20px;
+}
+
+.contacto-container p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #090029;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* reseñas */
+
+.reseñas {
+    padding: 50px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reseñas-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.reseñas-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reseñas-container p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+.review-list {
+    margin-bottom: 30px;
+}
+
+.review {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.review h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #090029;
+}
+
+.review p {
+    font-size: 16px;
+    color: #555;
+}
+
+form {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #090029;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+
+.intro {
+    font-family: "Urbanist", sans-serif;
+}
+
+.introduccion-parfum {
+    font-family: "Urbanist", sans-serif;
+}
